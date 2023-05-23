@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>CustomTs - cart</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><b>CustomTs</b></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-primary active" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary active" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary active" href="#">Unisex</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="btn btn-success mx-1" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="btn btn-primary mx-1" href="register.html">Register</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shoppingCart.html">
+                            <i class="fas fa-shopping-cart position-relative">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                </span>
+                                Cart
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered border-dark table-responsive mt-5">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Size</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="img/hoodie3.png" style="height: 20%; width: 20%;">
+                            <br>
+                            <a class="btn btn-danger" style="height: 20%; width: 20%;"
+                                href="customizeItem.html">Customize Item</a>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Size
+                                </button>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-item">XL</p>
+                                    <p class="dropdown-item">L</p>
+                                    <p class="dropdown-item">M</p>
+                                    <p class="dropdown-item">S</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control-sm" placeholder="1">
+                        </td>
+                        <td>
+                            1000 MKD
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card w-50">
+                    <div class="card-title">
+                        <h4 class="card-header">Billing information</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="firstName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name" id="firstName">
+                                </div>
+                                <div class="col">
+                                    <label for="lastName" class="form-label"></label>
+                                    <input type="text" class="form-control mt-2" placeholder="Last Name" id="lastName">
+                                </div>
+                            </div>
+                            <label for="emailAddres" class="form-label mt-3">E-mail address</label>
+                            <input type="email" class="form-control" placeholder="Email" id="emailAddres">
+
+                            <label for="billingAddress" class="form-label mt-3">Billing address</label>
+                            <input type="text" class="form-control" placeholder="Address line 1" id="billingAddress">
+                            <input type="text" class="form-control mt-3" placeholder="Address line 2" id="billingAddress2">
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="City" id="city">
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" placeholder="Postal code" id="postalCode">
+                                </div>
+                            </div>
+                            <label for="country" class="form-label mt-3">Country</label>
+                            <input type="text" class="form-control" placeholder="Macedonia" id="country">
+                            <label for="phoneNumber" class="form-label mt-3">Phone number</label>
+                            <input type="number" class="form-control mb-2" placeholder="07X/XXX-XXX" id="phoneNumber">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <div class="form-check m-2">
+                    <input class="form-check-input" type="radio" name="paymentOption" id="cardPayment" value="option1"
+                        checked>
+                    <label class="form-check-label" for="cardPayment">
+                        Direct card payment
+                    </label>
+                </div>
+                <div class="form-check m-2">
+                    <input class="form-check-input" type="radio" name="paymentOption" id="deliveryPayment"
+                        value="option2">
+                    <label class="form-check-label" for="deliveryPayment">
+                        Payment upon delivery
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <a href="successfulPurchase.html" class="btn btn-primary m-2">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-primary sm mt-5">
+        ©2023 <span class="text-black"><b>CustomTs</b></span> by Stefan Shapkarov 183104
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

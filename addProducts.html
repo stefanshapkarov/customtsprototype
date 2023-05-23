@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>CustomTs - admin</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><b>CustomTs</b></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-primary active" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary active" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary active" href="#">Unisex</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning active" href="addProducts.html">Add
+                            products</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-warning active" href="addProducts.html">Welcome,
+                            Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container m-5 d-flex justify-content-center">
+        <div class="card" style="width: 50rem;">
+            <div class="card-header">
+                <h4>Add product</h1>
+            </div>
+            <div class="card-body">
+                <label class="form-label" for="productName">Name</label>
+                <input type="text" class="form-control" placeholder="Product name" id="productName">
+                <label class="form-label mt-3" for="productColor">Color</label>
+                <input type="text" class="form-control" placeholder="Product color" id="productColor">
+                <div class="mt-3">
+                    <label for="productSize" class="form-label">Size:</label>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="productSize">Product size</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">XL</a>
+                            <a class="dropdown-item" href="#">L</a>
+                            <a class="dropdown-item" href="#">M</a>
+                            <a class="dropdown-item" href="#">S</a>
+                        </div>
+                    </div>
+                </div>
+                <label class="form-label mt-3" for="productPrice">Price</label>
+                <input type="number" class="form-control w-25" placeholder="Product price" id="productPrice">
+                <label class="form-label mt-3" for="productQuantity">Quantity</label>
+                <input type="number" class="form-control w-25" placeholder="Product quantity" id="productQuantity">
+                <hr class="w-25">
+                <button type="button" class="btn btn-danger">Upload product picture</button>
+                <hr>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <a type="button" class="btn btn-warning" href="home.html">Add product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-primary sm">
+        ©2023 <span class="text-black"><b>CustomTs</b></span> by Stefan Shapkarov 183104
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
